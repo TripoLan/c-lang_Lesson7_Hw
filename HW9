@@ -1,0 +1,17 @@
+#include <string.h>
+#include <stdio.h>
+
+int PrintString(char StringInput[]){
+    int half=strlen(StringInput/2);
+    StringInput[half]=0;
+    printf("\n%s",StringInput);
+}
+
+
+int main(){
+    char GetString[100];
+    gets(GetString);
+    PrintString(GetString);
+    
+    return 0;
+}

@@ -1,0 +1,25 @@
+#include <string.h>
+#include <stdio.h>
+
+
+ int NewString()
+ {
+     
+    int len=0;
+    char name[100];
+    while(len<10)
+    {
+    printf("please write something with 10 letters or more\n");
+    gets(name);
+    len=strlen(name);
+    }
+    
+ return 0;
+ }
+ 
+ int main()
+ {
+     NewString();
+     
+     return 0;
+ }

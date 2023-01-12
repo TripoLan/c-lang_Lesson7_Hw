@@ -1,0 +1,19 @@
+#include <string.h>
+#include <stdio.h>
+
+int main()
+{
+ char name[5][100];
+
+ for(int i=0;i<5;i++)
+ {
+ printf("type a name\n");
+ gets(name[i]);
+ }
+ for(int j=0;j<5;j++)
+ {
+ printf("name number %d the second letter is %c\n",j+1,name[j][1]);
+ }
+
+    return 0;
+}
